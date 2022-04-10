@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="data" value="https://www.nobroker.in/"/>
+  <test thread-count="5" name="chromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="org.pageexecution.PropertySearchPageExecution">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+          <include name="beforetest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- org.pageexecution.PropertySearchPageExecution -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
