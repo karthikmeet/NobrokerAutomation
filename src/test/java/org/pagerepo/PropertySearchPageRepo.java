@@ -25,7 +25,19 @@ public class PropertySearchPageRepo extends BaseClass {
 	private WebElement ChooseProperty;
 	@FindBy(xpath = "//*[text()='Apartment Type']")
 	private WebElement ApartmentType;
+	@FindBy(xpath = "//*[@id=\"listPageTop\"]/div[3]/div[2]/div[2]/div[1]/div/article[1]/div/div/section[1]/div[1]/span[1]/h2/span")
+	private WebElement SelectProperty;
+	@FindBy(xpath = "//*[text()='Description']")
+	private WebElement Description;
 	
+	public WebElement getDescription() {
+		return Description;
+	}
+
+	public WebElement getSelectProperty() {
+		return SelectProperty;
+	}
+
 	public WebElement getApartmentType() {
 		return ApartmentType;
 	}
